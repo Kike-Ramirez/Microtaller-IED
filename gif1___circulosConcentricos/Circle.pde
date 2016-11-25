@@ -1,11 +1,23 @@
+/* Microtaller IED One Year Course DA&ED 2017
+
+   Author: Kike Ramírez
+   Exercise: Efecto psicodélico círculos concéntricos
+   Fecha: 25/11/2016
+   
+*/
+
+// Clase circulo
+
 class Circle {
 
+  // Parámetros de la clase
   int xCenter;
   int yCenter;
   float radioCircle;
   float widthCircle;
   color colorCircle;
   
+  // Constructor de la clase
   Circle(int xCenter_, int yCenter_, float radioCircle_, float widthCircle_, color colorCircle_) {
   
     xCenter = xCenter_;
@@ -16,12 +28,14 @@ class Circle {
     
   }
   
+  // Actualizamos parametros
   void update(float widthCircle_) {
   
     widthCircle = widthCircle_;
   
   }
 
+  // Dibujamos el circulo
   void display() {
   
     noStroke();

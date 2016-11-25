@@ -1,15 +1,31 @@
+/* Microtaller IED One Year Course DA&ED 2017
 
+   Author: Kike Ramírez
+   Exercise: Rejilla de elementos rotatorios
+   Fecha: 25/11/2016
+   
+*/
+
+
+// Declaramos las variables
 ArrayList<Rectangle> rectangles;
 int nRectanglesX = 30;
 int nRectanglesY = 20;
 
+
+// Setup
 void setup() {
 
+  // Definimos la ventana de trabajo
   size(1024, 768);
+  
+  // Fijamos el anchor point del rectángulo en el centro
   rectMode(CENTER);
   
+  // Inicializamos la lista de rectángulos (aún vacía)
   rectangles = new ArrayList<Rectangle>();
   
+  // Recorremos la rejilla llenando la lista de objetos
   for (int i = 0; i < nRectanglesX; i++) {
     
     for (int j = 0; j < nRectanglesY; j++) {
@@ -25,10 +41,13 @@ void setup() {
   
 }
 
+// Draw
 void draw() {
   
+  // Limpiamos el canvas anterior
   background(0);
   
+  // Recorremos la lista de rectangulos actualizando valores y dibujando
   for (int i = 0; i < rectangles.size(); i++) {
     
     int x = abs(i / nRectanglesX);

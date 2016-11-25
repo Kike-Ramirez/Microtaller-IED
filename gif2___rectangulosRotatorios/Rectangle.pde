@@ -1,5 +1,15 @@
+/* Microtaller IED One Year Course DA&ED 2017
+
+   Author: Kike Ramírez
+   Exercise: Rejilla de elementos rotatorios
+   Fecha: 25/11/2016
+   
+*/
+
+// Clase rectángulo
 class Rectangle {
 
+  // Parámetros de la clase
   int xCenter;
   int yCenter;
   float heightRectangle;
@@ -7,6 +17,7 @@ class Rectangle {
   float angle;
   color colorRectangle;
   
+  // Constructor de la clase
   Rectangle(int xCenter_, int yCenter_, float widthRectangle_, float heightRectangle_, color colorRectangle_) {
   
     xCenter = xCenter_;
@@ -18,12 +29,14 @@ class Rectangle {
     
   }
   
+  // Actualizamos parámetros
   void update(float angle_) {
   
     angle = angle_;
   
   }
 
+  // Dibujamos el rectángulo
   void display() {
   
     noStroke();
